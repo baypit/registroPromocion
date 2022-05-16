@@ -1,0 +1,39 @@
+<div class="container">
+    <div class="card">
+        <div class="card-header">
+            <h3>
+                Productos
+            </h3>
+        </div>
+        <div class="card-body">
+            <table class="table table-hover">
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>NOMBRE</th>
+                        <th>EMAIL</th>
+                        <th>TELEFONO</th>
+                        <th>GRUPO</th>
+                        <th>ACCIONES</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr *ngFor = "let persona of personas" class="text-center">
+                        <td>{{persona.id}}</td>
+                        <td>{{persona.nombre}}</td>
+                        <td>{{persona.email}}</td>
+                        <td>{{persona.telefono}}</td>
+                        <td>{{persona.grupo}}</td>
+                        <td>
+                            <button (click) ="editar(persona)" class="btn btn-warning">Editar</button>
+                            <button (click) ="Eliminar(persona)" class="btn btn-danger">Delete</button>
+                        </td>
+                    </tr>
+                </tbody>
+
+            </table>
+
+        </div>
+    </div>
+    <button (click)="nuevo()" class="btn btn-info" style="margin-left: 10px;">Registrar clientes</button>
+</div>
