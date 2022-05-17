@@ -26,7 +26,7 @@ export class AddComponent implements OnInit {
   
 
   prepararParaGuardar(name: string, mail: string, telefono: string){
-    this.producto = new Persona(name,mail ,telefono, this.promo+"");
+    this.producto = new Persona(name,mail ,telefono, this.promo+"","");
     console.log(name);
     console.log(this.promo);
     console.log(mail);

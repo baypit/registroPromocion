@@ -10,7 +10,7 @@ import { ServiceService } from 'src/app/Service/service.service';
 })
 export class EditarComponent implements OnInit {
 
-  personaEdit:Persona=new Persona("1","1","1","1");
+  personaEdit:Persona=new Persona("1","1","1","1","1");
   constructor(private router:Router, private service: ServiceService) { }
 
   ngOnInit(): void {
